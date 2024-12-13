@@ -22,12 +22,12 @@ noButton.addEventListener('mouseover', () => {
     randomPosition();
 });
 
-// Show "Aj ja teba ❤️" message when "Yes" is clicked
+// Redirect to love.html when "Áno" button is clicked
 yesButton.addEventListener('click', () => {
-    yesButton.style.display = 'none';
-    noButton.style.display = 'none';
-    loveMessage.style.display = 'block';
+    window.location.href = 'love.html'; // Redirect to love.html
 });
+
+
 
 // Position the "No" button at the start (next to "Yes" button)
 function positionNoButtonInitially() {
